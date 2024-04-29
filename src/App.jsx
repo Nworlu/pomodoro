@@ -18,7 +18,7 @@ function App() {
       <Title>Pomodoro</Title>
       <Tags />
       <Timer />
-      <div>
+      <div className="mx-auto text-white mt-2 w-[60px]">
         <button onClick={() => setIsOpen(true)}>Settings</button>
       </div>
     </div>
