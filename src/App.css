@@ -1,0 +1,21 @@
+@font-face {
+  font-family: jersey;
+  src: url(/Jersey10-Regular.ttf);
+}
+.jersey {
+  font-family: jersey;
+}
+@font-face {
+  font-family: jacquard;
+  src: url(/Jacquard24-Regular.ttf);
+}
+.jacquard {
+  font-family: jacquard;
+}
+@font-face {
+  font-family: ubuntu;
+  src: url(/Ubuntu-Regular.ttf);
+}
+.ubuntu {
+  font-family: ubuntu;
+}
