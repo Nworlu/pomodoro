@@ -13,7 +13,7 @@ const OuterCircle = ({ children }) => {
       style={{
         backgroundImage: `conic-gradient(#${globalColor} ${progress}%, transparent ${progress}%)`,
       }}
-      className="w-[35rem] h-[35rem] rounded-[50%] grid place-content-center"
+      className="w-[25rem] h-[25rem] md:w-[35rem] md:h-[35rem] rounded-[50%] grid place-content-center"
     >
       {children}
     </div>

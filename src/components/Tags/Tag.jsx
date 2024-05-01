@@ -8,7 +8,7 @@ const Tag = ({ children, onClick, index }) => {
       onClick={onClick}
       className={`${
         activeTag === index ? "bg-[#b85600]" : ""
-      } flex-1 text-white rounded-[5rem] h-[4rem] text-[2rem]`}
+      } flex-1 text-white rounded-[5rem] h-[4rem] text-[1.5rem] md:text-[2rem]`}
     >
       {children}
     </button>

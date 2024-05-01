@@ -13,12 +13,12 @@ function App() {
   const { globalFont } = useApContext();
 
   return (
-    <div className={globalFont}>
+    <div className={`${globalFont} h-full`}>
       <ModalContainer setIsClose={setIsOpen} isOpen={isOpen} />
       <Title>Pomodoro</Title>
       <Tags />
       <Timer />
-      <div className="mx-auto text-white mt-2 w-[60px]">
+      <div className="mx-auto text-white mt-2 w-[60px] text-center">
         <button onClick={() => setIsOpen(true)}>Settings</button>
       </div>
     </div>

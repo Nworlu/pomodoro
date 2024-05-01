@@ -55,12 +55,12 @@ const ModalContainer = ({ isOpen, setIsClose }) => {
         display: `${isOpen ? "grid" : "none"}`,
         placeContent: `${isOpen ? "center" : ""}`,
       }}
-      className="transition-all duration-300"
+      className="transition-all duration-300 px-[20px] md:px-[50px]"
     >
       <div
         className={` transition-all duration-300 ${
           isOpen ? "translate-y-[0%]" : "translate-y-[-190%]"
-        } max-w-[550px] w-[550px] h-[400px] rounded-[12px] bg-[#fff]`}
+        } w-screen md:max-w-[550px] md:w-[550px] h-[400px] rounded-[12px] bg-[#fff]`}
       >
         <div className="flex items-center justify-between px-[10px] border-b border-b-gray-600 py-[20px]">
           <h1 className="text-[3rem] font-bold">Settings</h1>
@@ -72,7 +72,9 @@ const ModalContainer = ({ isOpen, setIsClose }) => {
         >
           <div className="flex items-center gap-[1rem] w-full px-[10px]">
             <div className="flex flex-col gap-[8px] flex-1 ">
-              <label htmlFor="">Pomodoro Time</label>
+              <label htmlFor="" className="text-[1.5rem]">
+                Pomodoro Time
+              </label>
               <input
                 value={enteredPomodoro}
                 type="number"
@@ -83,7 +85,9 @@ const ModalContainer = ({ isOpen, setIsClose }) => {
               />
             </div>
             <div className="flex flex-col gap-[8px] flex-1 ">
-              <label htmlFor="">Short Break Time</label>
+              <label htmlFor="" className="text-[1.5rem]">
+                Short Break Time
+              </label>
               <input
                 value={enteredShortBreak}
                 type="number"
@@ -94,7 +98,9 @@ const ModalContainer = ({ isOpen, setIsClose }) => {
               />
             </div>
             <div className="flex flex-col gap-[8px] flex-1 ">
-              <label htmlFor="">Long Break Time</label>
+              <label htmlFor="" className="text-[1.5rem]">
+                Long Break Time
+              </label>
               <input
                 value={enteredLongBreak}
                 type="number"
